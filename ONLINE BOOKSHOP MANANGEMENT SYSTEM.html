@@ -1,61 +1,161 @@
-< !DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"	<title>online boo </title>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Bookshop</title>
+    <style>
+        /* Inline CSS for basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .book-list, .book-dropdown select {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        form {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e2e2e2;
+        }
+        label {
+            font-weight: bold;
+        }
+        .faq, .contact-info, .footer-content {
+            background-color: #e9ecef;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px 0;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Online Bookshop</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- About Us Section -->
+        <h2>About Us</h2>
+        <p>Welcome to Online Bookshop! We are dedicated to providing reliable book services all over the country. Our mission is to ensure safe delivery of books for all our customers. Book costs will vary according to the content and quality.</p>
+
+        <!-- Book List Section -->
+        <h3>Our Books</h3>
+        <ul class="book-list">
+            <li>English Aid</li>
+            <li>Made Familiar Mathematics</li>
+            <li>Spotlight Science</li>
+            <li>Get It Right</li>
+            <li>A Finder</li>
+            <li>Torch</li>
+        </ul>
+
+        <!-- Customer Information Form -->
+        <form>
+            <h3>Customer Information</h3>
+            <p>Please provide the required information below and make payments to the given number.</p>
+            
+            <label for="customer-name">Customer Name</label><br>
+            <input type="text" id="customer-name" name="customer-name" required><br><br>
+
+            <label for="customer-email">Customer Email</label><br>
+            <input type="email" id="customer-email" name="customer-email" required><br><br>
+
+            <label for="customer-phone">Customer Telephone Number</label><br>
+            <input type="tel" id="customer-phone" name="customer-phone" required><br><br>
+
+            <label for="books">Books</label><br>
+            <input type="text" id="books" name="books" placeholder="Enter the book name" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Book Selection Dropdown -->
+        <h4>Books Selection</h4>
+        <div class="book-dropdown">
+            <label for="book-selection">Choose a book:</label>
+            <select id="book-selection" name="book-selection">
+                <option value="1">Book 1</option>
+                <option value="2">Book 2</option>
+                <option value="3">Book 3</option>
+                <option value="4">Book 4</option>
+                <option value="5">Book 5</option>
+                <option value="6">Book 6</option>
+                <option value="7">Book 7</option>
+                <option value="8">Book 8</option>
+            </select>
+        </div>
+
+        <!-- Payment Information -->
+        <ul>
+            <li style="background-color: #fff;">WAPENDWA</li>
+            <li>Send money to 0706307392</li>
+            <li>We offer honest and transparent transactions, Wapendwa here, Wapendwa there.</li>
+        </ul>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: support@onlinebookshop.com</li>
+                <li>Phone: +254 706 307392</li>
+                <li>Address: 123 Bookshop Street, Nairobi, Kenya</li>
+            </ul>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <p><strong>Q: How can I pay for my books?</strong></p>
+            <p>A: You can make payments via the provided phone number. We support various mobile payment options.</p>
+
+            <p><strong>Q: What is the delivery time?</strong></p>
+            <p>A: Delivery times vary depending on location but generally range from 2-5 business days.</p>
+
+            <p><strong>Q: Do you accept returns?</strong></p>
+            <p>A: Yes, returns are accepted within 14 days if the book is in its original condition.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Online Bookshop. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#" style="color: #ffffff;">Facebook</a> |
+                <a href="#" style="color: #ffffff;">Twitter</a> |
+                <a href="#" style="color: #ffffff;">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
-<h1>Home</h1>
-<img src="Grace.jpg">
-	<h2>About Us</h2>
-	welcome to online bookshop.!We are dedicated to providing 
-	reliable books services  all over the country.Our mission is to ensure safe deliver of books for all our customers.Books cost will be according to the content and its qua
-	<"ul class ="Book-list>
-	<li>English Aid</li>
-	<li>Made Familiar Mathematics</li>
-	<li>Spotlight Science</li>
-	<li>Get It Right</li>
-	<li>A Finder</li>
-	<li>Torch</li>
-<ul/>
-	<div/>
-	<div/>
-	<div/>
-	<li style="background-color:violet;">Customers to give the required information below and make their payments to the given number</li>
-<form>
-		<label for="Customers name">Customer name</label><br>
-		<input type="text" id ="Customer name" name="Customer"><br>
-		<label for="Customer email">Customer email</label><br>
-		<input type="text" id="customer email" email="Customer"><br>
-		<label for="Customer telephone number">Customer telephone number</label><br>
-		<input type="text" id="Customer telephone number" number="Customer"><br>
-
-		<label for="Books">Books</label><br>
-		<input type="Books" name="Books">
-
-		<input type="SUBMIT" name="SUBMIT">
-		<label for="SUBMIT"></label></li>
-</form>
-<h4>Books Selection</h4>
-<"div class ="book-dropdown>
-	<label for ="seats">choose a book:</label>
-	<"select id ="seats"name="book selection"<option value ="1">Book 1</option>
-		<option> value ="2">Book 2</option>
-		<option> value="3">Book 3</option>
-		<option> value="4">Book 4</option>
-		<option>value="5">Book 5</option>
-		<option value ="6">Book 6</option>
-		<option>value="7">Book 7</option>
-		<option>value="8"></option>
-<ul>
-		<li style="background-color: white;">WAPENDWA</li>
-		<li> Send money to 0706307392 </li>
-		<li>We offer honest and transparent transactions,Wapendwa here Wapendwa there.</li>
-
-	</ul>
-	<body/>
-	<html/>
-
-    
-</html>
+</html> 
