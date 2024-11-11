@@ -1,127 +1,90 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Bookshop</title>
-    <style>
-        /* Inline CSS for basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header, footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        h1, h2, h3, h4 {
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .book-list, .book-dropdown select {
-            padding: 10px;
-            margin-top: 10px;
-        }
-        form {
-            margin: 20px 0;
-            padding: 15px;
-            background: #e2e2e2;
-        }
-        label {
-            font-weight: bold;
-        }
-        .faq, .contact-info, .footer-content {
-            background-color: #e9ecef;
-            padding: 15px;
-            margin: 10px 0;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            padding: 5px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="start.css">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Welcome to Online Bookshop</h1>
+        <div class="header-content">
+            <h1>Welcome to Online Bookshop</h1>
+            <img src="img11.png" alt="Bookshop Logo" class="logo">
+        </div>
     </header>
 
     <!-- Main Content Section -->
     <div class="container">
         <!-- About Us Section -->
-        <h2>About Us</h2>
-        <p>Welcome to Online Bookshop! We are dedicated to providing reliable book services all over the country. Our mission is to ensure safe delivery of books for all our customers. Book costs will vary according to the content and quality.</p>
+        <section class="about-us">
+            <h2>About Us</h2>
+            <img src="img13.jpeg" alt="Our Team" class="team-img">
+            <p>Welcome to Online Bookshop! We are dedicated to providing reliable book services all over the country. Our mission is to ensure safe delivery of books for all our customers. Book costs will vary according to the content and quality.</p>
+        </section>
 
         <!-- Book List Section -->
-        <h3>Our Books</h3>
-        <ul class="book-list">
-            <li>English Aid</li>
-            <li>Made Familiar Mathematics</li>
-            <li>Spotlight Science</li>
-            <li>Get It Right</li>
-            <li>A Finder</li>
-            <li>Torch</li>
-        </ul>
+        <section class="book-list">
+            <h3>Our Books</h3>
+            <ul>
+                <li><img src="english Aid.jpeg" alt="English Aid" class="book-img"> English Aid</li>
+                <li><img src="shopping (1).webp" alt="Made Familiar Mathematics" class="book-img"> Made Familiar biologys</li>
+                <li><img src="get it right.webp" alt="Spotlight Science" class="book-img"> high school Biology</li>
+                <li><img src="a finder (2).webp" alt="" class="book-img">The A finder bio practical manual</li>
+                <li><img src="a finder.webp" alt="A Finder" class="book-img">  The A Finder bio revision book</li>
+                <li><img src="torch.webp" alt="Torch" class="book-img"> Torch</li>
+            </ul>
+        </section>
 
         <!-- Customer Information Form -->
-        <form>
+        <section class="customer-info">
             <h3>Customer Information</h3>
             <p>Please provide the required information below and make payments to the given number.</p>
-            
-            <label for="customer-name">Customer Name</label><br>
-            <input type="text" id="customer-name" name="customer-name" required><br><br>
+            <form>
+                <label for="customer-name">Customer Name</label>
+                <input type="text" id="customer-name" name="customer-name" required placeholder="Enter your name">
+                
+                <label for="customer-email">Customer Email</label>
+                <input type="email" id="customer-email" name="customer-email" required placeholder="Enter your email">
 
-            <label for="customer-email">Customer Email</label><br>
-            <input type="email" id="customer-email" name="customer-email" required><br><br>
+                <label for="customer-phone">Customer Telephone Number</label>
+                <input type="tel" id="customer-phone" name="customer-phone" required placeholder="Enter your phone number">
 
-            <label for="customer-phone">Customer Telephone Number</label><br>
-            <input type="tel" id="customer-phone" name="customer-phone" required><br><br>
+                <label for="books">Books</label>
+                <input type="text" id="books" name="books" required placeholder="Enter the book name">
 
-            <label for="books">Books</label><br>
-            <input type="text" id="books" name="books" placeholder="Enter the book name" required><br><br>
-
-            <input type="submit" value="Submit">
-        </form>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
 
         <!-- Book Selection Dropdown -->
-        <h4>Books Selection</h4>
-        <div class="book-dropdown">
+        <section class="book-dropdown">
+            <h4>Books Selection</h4>
             <label for="book-selection">Choose a book:</label>
             <select id="book-selection" name="book-selection">
-                <option value="1">Book 1</option>
-                <option value="2">Book 2</option>
-                <option value="3">Book 3</option>
-                <option value="4">Book 4</option>
-                <option value="5">Book 5</option>
-                <option value="6">Book 6</option>
-                <option value="7">Book 7</option>
-                <option value="8">Book 8</option>
+                <option value="english-aid">English Aid</option>
+                <option value="mathematics">Made Familiar Mathematics</option>
+                <option value="science">Spotlight Science</option>
+                <option value="get-it-right">Get It Right</option>
+                <option value="a-finder">A Finder</option>
+                <option value="torch">Torch</option>
             </select>
-        </div>
+        </section>
 
         <!-- Payment Information -->
-        <ul>
-            <li style="background-color: #fff;">WAPENDWA</li>
-            <li>Send money to 0706307392</li>
-            <li>We offer honest and transparent transactions, Wapendwa here, Wapendwa there.</li>
-        </ul>
+        <section class="payment-info">
+            <ul>
+                <li><strong>WAPENDWA</strong></li>
+                <li>Send money to 0706307392</li>
+                <li><img src="aid.jpg" alt="Payment Methods" class="payment-img"></li>
+                <li>We offer honest and transparent transactions, Wapendwa here, Wapendwa there.</li>
+            </ul>
+        </section>
 
         <!-- Contact Information Section -->
-        <div class="contact-info">
+        <section class="contact-info">
             <h3>Contact Us</h3>
             <p>If you have any questions, feel free to reach out to us:</p>
             <ul>
@@ -129,10 +92,10 @@
                 <li>Phone: +254 706 307392</li>
                 <li>Address: 123 Bookshop Street, Nairobi, Kenya</li>
             </ul>
-        </div>
+        </section>
 
         <!-- FAQ Section -->
-        <div class="faq">
+        <section class="faq">
             <h3>Frequently Asked Questions (FAQ)</h3>
             <p><strong>Q: How can I pay for my books?</strong></p>
             <p>A: You can make payments via the provided phone number. We support various mobile payment options.</p>
@@ -142,7 +105,7 @@
 
             <p><strong>Q: Do you accept returns?</strong></p>
             <p>A: Yes, returns are accepted within 14 days if the book is in its original condition.</p>
-        </div>
+        </section>
     </div>
 
     <!-- Footer Section -->
@@ -150,12 +113,12 @@
         <div class="footer-content">
             <p>&copy; 2024 Online Bookshop. All rights reserved.</p>
             <p>Follow us on:
-                <a href="#" style="color: #ffffff;">Facebook</a> |
-                <a href="#" style="color: #ffffff;">Twitter</a> |
-                <a href="#" style="color: #ffffff;">Instagram</a>
+                <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter" class="social-icon"></a>
+                <a href="https://instagram.com"><img src="instagram-icon.png" alt="Instagram" class="social-icon"></a>
             </p>
         </div>
     </footer>
 
 </body>
-</html> 
+</html>
