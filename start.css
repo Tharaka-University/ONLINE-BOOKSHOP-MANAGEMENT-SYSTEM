@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2, h3, h4 {
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about-us img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Book List Section */
+.book-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.book-list .book-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Customer Information Form */
+form {
+    background-color: #e2e2e2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Payment Info Section */
+.payment-info ul {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.payment-info .payment-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .book-list ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content p {
+       

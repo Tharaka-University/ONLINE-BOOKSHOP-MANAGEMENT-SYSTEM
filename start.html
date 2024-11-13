@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookshop</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Welcome to Online Bookshop</h1>
+            <img src="img11.png" alt="Bookshop Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h2>About Us</h2>
+            <img src="img13.jpeg" alt="Our Team" class="team-img">
+            <p>Welcome to Online Bookshop! We are dedicated to providing reliable book services all over the country. Our mission is to ensure safe delivery of books for all our customers. Book costs will vary according to the content and quality.</p>
+        </section>
+
+        <!-- Book List Section -->
+        <section class="book-list">
+            <h3>Our Books</h3>
+            <ul>
+                <li><img src="english Aid.jpeg" alt="English Aid" class="book-img"> English Aid</li>
+                <li><img src=".webp" alt="Made Familiar Mathematics" class="book-img"> Made Familiar Biology</li>
+                <li><img src="get it right.webp" alt="Spotlight Science" class="book-img"> High School Biology</li>
+                <li><img src="a finder (2).webp" alt="" class="book-img"> The A Finder Bio Practical Manual</li>
+                <li><img src="a finder.webp" alt="A Finder" class="book-img"> The A Finder Bio Revision Book</li>
+                <li><img src="torch.webp" alt="Torch" class="book-img"> Torch</li>
+            </ul>
+        </section>
+
+        <!-- Customer Information Form -->
+        <section class="customer-info">
+            <h3>Customer Information</h3>
+            <p>Please provide the required information below and make payments to the given number.</p>
+            <!-- Updated form with action and method -->
+            <form action="start.php" method="POST">
+                <label for="customer-name">Customer Name</label>
+                <input type="text" id="customer-name" name="customer_name" required placeholder="Enter your name">
+                
+                <label for="customer-email">Customer Email</label>
+                <input type="email" id="customer-email" name="customer_email" required placeholder="Enter your email">
+
+                <label for="customer-phone">Customer Telephone Number</label>
+                <input type="tel" id="customer-phone" name="customer_phone" required placeholder="Enter your phone number">
+
+                <label for="books">Books</label>
+                <input type="text" id="books" name="books" required placeholder="Enter the book name">
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Book Selection Dropdown -->
+        <section class="book-dropdown">
+            <h4>Books Selection</h4>
+            <label for="book-selection">Choose a book:</label>
+            <select id="book-selection" name="book-selection">
+                <option value="english-aid">English Aid</option>
+                <option value="mathematics">Made Familiar Mathematics</option>
+                <option value="science">Spotlight Science</option>
+                <option value="get-it-right">Get It Right</option>
+                <option value="a-finder">A Finder</option>
+                <option value="torch">Torch</option>
+            </select>
+        </section>
+
+        <!-- Payment Information -->
+        <section class="payment-info">
+            <ul>
+                <li><strong>WAPENDWA</strong></li>
+                <li>Send money to 0706307392</li>
+                <li><img src="aid.jpg" alt="Payment Methods" class="payment-img"></li>
+                <li>We offer honest and transparent transactions, Wapendwa here, Wapendwa there.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h3>Contact Us</h3>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: support@onlinebookshop.com</li>
+                <li>Phone: +254 706 307392</li>
+                <li>Address: 123 Bookshop Street, Nairobi, Kenya</li>
+            </ul>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <p><strong>Q: How can I pay for my books?</strong></p>
+            <p>A: You can make payments via the provided phone number. We support various mobile payment options.</p>
+
+            <p><strong>Q: What is the delivery time?</strong></p>
+            <p>A: Delivery times vary depending on location but generally range from 2-5 business days.</p>
+
+            <p><strong>Q: Do you accept returns?</strong></p>
+            <p>A: Yes, returns are accepted within 14 days if the book is in its original condition.</p>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Online Bookshop. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://facebook.com"><img src="facebook.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter" class="social-icon"></a>
+                <a href="https://instagram.com"><img src="insttergram.png" alt="Instagram" class="social-icon"></a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
